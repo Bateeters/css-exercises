@@ -9,12 +9,24 @@
   </head>
   <body>
     <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+
+      <!-- Separated from the rest of the pop-up in order to align everything else -->
+        <div class="icon">!</div>
+
+        <!-- class="container" div used to have only 2 flex elements in the parent, "modal", flex container -->
+        <!-- this allows for the included elements to be left aligned without going under the blue "!" -->
+        <div class="container">
+
+          <div class="header">Are you sure you want to do that?
+            <button class="close-button">✖</button>
+          </div>
+
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+          
+          <button class="continue">Continue</button>
+          <button class="cancel">Cancel</button>
+        </div>
+        
     </div>
   </body>
 </html>
